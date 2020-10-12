@@ -1,4 +1,4 @@
-Jenkinsfile (Scripted Pipeline)
+Jenkinsfile (Declarative Pipeline)
 /* 需要Docker Pipeline插件 */
 node('docker') {
     stage('Build') {
