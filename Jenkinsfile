@@ -11,13 +11,7 @@ pipeline {
 
         stage('code_scan') {
           steps {
-            mail(subject: 'BUILD_for_pip_test', body: 'pip test build finshed', to: 'gaohaobo@kylinos.cn', from: 'admin_jenkins')
-          }
-        }
-
-        stage('') {
-          steps {
-            withSonarQubeEnv(installationName: 'shengsheng', credentialsId: '123')
+            withSonarQubeEnv(installationName: 'shengsheng', credentialsId: 'd3572ad4b4386fe571bcfb6fcb35b34b3214bc20')
           }
         }
 
